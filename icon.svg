@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <linearGradient id="bellGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners for maskable safe zone -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer subtle ring -->
+  <circle cx="256" cy="266" r="160" fill="none" stroke="#334155" stroke-width="6" opacity="0.6" />
+
+  <!-- Alarm bells on top -->
+  <!-- Left Bell -->
+  <path d="M120 150 C105 130 115 90 145 75 C175 60 205 90 190 115 Z" fill="url(#accentGrad)" opacity="0.9" />
+  <rect x="150" y="105" width="20" height="35" rx="5" transform="rotate(-35 150 105)" fill="#64748b" />
+  
+  <!-- Right Bell -->
+  <path d="M392 150 C407 130 397 90 367 75 C337 60 307 90 322 115 Z" fill="url(#accentGrad)" opacity="0.9" />
+  <rect x="342" y="93" width="20" height="35" rx="5" transform="rotate(35 342 93)" fill="#64748b" />
+
+  <!-- Alarm Clock Main Body -->
+  <circle cx="256" cy="275" r="145" fill="#1e293b" stroke="url(#bellGrad)" stroke-width="12" filter="url(#glow)" />
+  <circle cx="256" cy="275" r="130" fill="#0f172a" />
+
+  <!-- Hour markers -->
+  <circle cx="256" cy="170" r="5" fill="#94a3b8" />
+  <circle cx="361" cy="275" r="5" fill="#94a3b8" />
+  <circle cx="256" cy="380" r="5" fill="#94a3b8" />
+  <circle cx="151" cy="275" r="5" fill="#94a3b8" />
+
+  <!-- Clock Hands pointing to 07:00 (Wake up time!) -->
+  <!-- Hour Hand -->
+  <line x1="256" y1="275" x2="200" y2="330" stroke="#f8fafc" stroke-width="10" stroke-linecap="round" />
+  <!-- Minute Hand -->
+  <line x1="256" y1="275" x2="256" y2="185" stroke="url(#accentGrad)" stroke-width="7" stroke-linecap="round" />
+  <!-- Center Cap -->
+  <circle cx="256" cy="275" r="12" fill="#f59e0b" />
+  <circle cx="256" cy="275" r="5" fill="#ffffff" />
+
+  <!-- Legs -->
+  <path d="M165 400 L140 435" stroke="#475569" stroke-width="14" stroke-linecap="round" />
+  <path d="M347 400 L372 435" stroke="#475569" stroke-width="14" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "منبه الفجر واليقظة APK",
+  "description": "تطبيق منبه ذكي متكامل وقابل للتثبيت والتحميل كـ APK على أجهزة أندرويد مع نغمات تنبيه، وتحديات استيقاظ، وساعة إيقاف ومؤقت.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
